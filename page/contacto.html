@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/estyle.css" />
+        <title>Contacto - Tienda Embark</title>
+    </head>
+    <body>
+        <header class="header">
+            <p class="header__logo">
+                <a href="../index.html">Tienda Embark</a>
+            </p>
+            <nav class="header__nav">
+                <ul>
+                    <li>
+                        <a href="../index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="./contacto.html">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="./carrito.html" class="carrito-icono">
+                           🛒 <span id="contador-carrito">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="seccion-contacto">
+                <h1 class="titulo-contacto">Contacto</h1>
+                <form 
+                  class="form"
+                   action="https://formspree.io/f/xwpnleyj"
+                   method="POST">
+                    <div class="campo-form">
+                        <label for="email">Correo Electrónico</label>
+                        <input id="email" type="email" name="email" required>
+                    </div>
+                    <div class="campo-form">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" required></textarea>
+                    </div>
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>Esta página la diseñó Sergio</p>
+            <nav>
+                <ul>
+                    <li>Instagram</li>
+                    <li>Tiktok</li>
+                    <li>Facebook</li>
+                </ul>
+            </nav>
+        </footer>
+        <script type="module" src="../js/contacto.js"></script>
+    </body>
+</html>

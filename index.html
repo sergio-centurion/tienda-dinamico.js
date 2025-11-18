@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Tienda Online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estyle.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Tienda Fantástica</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#reseñas">Reseñas</a></li>
+            <li><a href="page/contacto.html">Contacto</a></li>
+            <li>
+                <a href="page/carrito.html" class="carrito-icono">
+                    🛒 <span id="contador-carrito">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section id="inicio" class="inicio-section">
+            <h2>Bienvenidos a nuestra tienda</h2>
+            <p>Aquí encontrarás los mejores relojes del mercado.</p>
+            <div class="video-link-container">
+                <a href="https://www.youtube.com/shorts/wazzmhr-ud4" target="_blank" class="video-link">
+                    ¡Mira nuestro video promocional!
+                </a>
+            </div>
+        </section>
+        
+        <section id="productos">
+            <h2>Nuestros Productos</h2>
+            <div id="contenedor-tarjetas" class="productos-container">
+                <!-- Los productos se cargan con JavaScript -->
+            </div>
+        </section>
+        
+        <section id="reseñas">
+            <h2>Lo que dicen nuestros clientes</h2>
+            <div class="reseñas-container">
+                <div class="reseña">
+                    <p>"¡Excelente servicio y productos de alta calidad! Totalmente recomendado."</p>
+                    <span>- Cliente Satisfecho</span>
+                </div>
+                <div class="reseña">
+                    <p>"El envío fue rapidísimo y el reloj superó mis expectativas."</p>
+                    <span>- Comprador Feliz</span>
+                </div>
+                <div class="reseña reseña-destacada">
+                    <p>"La mejor tienda online de relojes que he probado. ¡Volveré a comprar sin duda!"</p>
+                    <span>- Fan #1</span>
+                </div>
+                <div class="reseña">
+                    <p>"Precios justos y una atención al cliente inmejorable."</p>
+                    <span>- Cliente Leal</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Mi Tienda Fantástica. Todos los derechos reservados.</p>
+    </footer>
+
+    <script type="module" src="js/index.js"></script>
+</body>
+</html>

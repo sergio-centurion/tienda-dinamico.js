@@ -1,0 +1,348 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-family: 'Lobster', cursive;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #4b6cb7, #182848);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/* Navegación */
+nav {
+    background-color: #333;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.carrito-icono {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Contenido Principal y Secciones */
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+/* Sección Inicio con fondo */
+.inicio-section {
+    background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+    background-color: #e8f0fe;
+    text-align: center;
+}
+
+/* Sección Productos (Flexbox) */
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin-top: 15px;
+}
+
+.card button {
+    background-color: #4b6cb7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Sección Reseñas (Grid) */
+.reseñas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.reseña {
+    background: #f9f9f9;
+    padding: 20px;
+    border-left: 5px solid #4b6cb7;
+}
+
+.reseña.reseña-destacada {
+    grid-column: span 2;
+    background-color: #e0e7ff;
+    border-color: #182848;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Media Queries para Diseño Responsivo */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+    
+    .reseña.reseña-destacada {
+        grid-column: span 1;
+    }
+}
+
+.video-link-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.video-link {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #c4302b;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.video-link:hover {
+    background-color: #a02620;
+}
+/* Estilos Generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-family: 'Lobster', cursive;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #4b6cb7, #182848);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/* Navegación */
+nav {
+    background-color: #333;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.carrito-icono {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Contenido Principal y Secciones */
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+/* Sección Inicio con fondo */
+.inicio-section {
+    background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+    background-color: #e8f0fe;
+    text-align: center;
+}
+
+/* Sección Productos (Flexbox) */
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin-top: 15px;
+}
+
+.card button {
+    background-color: #4b6cb7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Sección Reseñas (Grid) */
+.reseñas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.reseña {
+    background: #f9f9f9;
+    padding: 20px;
+    border-left: 5px solid #4b6cb7;
+}
+
+.reseña.reseña-destacada {
+    grid-column: span 2;
+    background-color: #e0e7ff;
+    border-color: #182848;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Media Queries para Diseño Responsivo */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+    
+    .reseña.reseña-destacada {
+        grid-column: span 1;
+    }
+}
+
+.video-link-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.video-link {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #c4302b;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.video-link:hover {
+    background-color: #a02620;
+}
